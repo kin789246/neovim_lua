@@ -25,16 +25,15 @@ keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
+    -- navigate to next/previous window
+keymap("n", "<leader>p", "<C-w>W", opts)
+keymap("n", "<leader>n", "<C-w>w", opts)
 
 -- Resize with arrows
 keymap("n", "<leader><", ":resize -5<CR>", opts)
 keymap("n", "<leader>>", ":resize +5<CR>", opts)
 keymap("n", "<leader>-", ":vertical resize -10<CR>", opts)
 keymap("n", "<leader>+", ":vertical resize +10<CR>", opts)
-
--- Naviagate buffers
-keymap("n", "<leader>n", ":bnext<CR>", opts)
-keymap("n", "<leader>p", ":bprevious<CR>", opts)
 
 -- Move text up and down
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
