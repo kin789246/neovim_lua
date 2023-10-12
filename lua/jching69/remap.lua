@@ -1,5 +1,5 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+--vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 
 local opts = { noremap = true, silent = true }
 local term_opts = { silent = true }
@@ -44,8 +44,8 @@ keymap("n", "<A-j>", "<Esc>:m .+1<CR>==", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==", opts)
 
 -- Comment / Uncomment block
-keymap("x", "<leader>/", "I//<Esc>", opts)
-keymap("x", "<leader>#", "I#<Esc>", opts)
+keymap("x", "<leader>/", "I// <Esc>", opts)
+keymap("x", "<leader>#", "I# <Esc>", opts)
 
 -- Clear Searching word in the register
 keymap("n", "<leader>us", ":let @/=''<CR>", opts)

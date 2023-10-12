@@ -16,3 +16,4 @@ vim.opt.colorcolumn = "80"
 vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
 vim.opt.syntax = on
 vim.cmd [[colorscheme torte]]
+vim.cmd [[let g:netrw_winsize = 30]]
