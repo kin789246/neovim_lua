@@ -15,5 +15,5 @@ vim.opt.signcolumn = "no"
 vim.opt.colorcolumn = "80"
 vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
 vim.opt.syntax = on
-vim.cmd [[colorscheme torte]]
+vim.cmd [[colorscheme codedark]]
 vim.cmd [[let g:netrw_winsize = 30]]
