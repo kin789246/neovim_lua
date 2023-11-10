@@ -35,11 +35,11 @@ keymap("n", "<leader>>", ":resize +5<CR>", opts)
 keymap("n", "<leader>-", ":vertical resize -10<CR>", opts)
 keymap("n", "<leader>+", ":vertical resize +10<CR>", opts)
 
--- Move text up and down
-keymap("v", "<A-j>", ":m .+1<CR>==", opts)
-keymap("v", "<A-k>", ":m .-2<CR>==", opts)
+-- Move visual block up and down
+keymap("v", "<A-j>", "xp`[V`]", opts)
+keymap("v", "<A-k>", "xkP`[V`]", opts)
 
--- Move text up and down
+-- Move single line up and down
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==", opts)
 
