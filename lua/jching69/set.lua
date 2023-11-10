@@ -15,7 +15,7 @@ vim.opt.signcolumn = "no"
 vim.opt.colorcolumn = "80"
 vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
 vim.opt.syntax = on
-vim.cmd [[colorscheme iceberg]]
+vim.cmd [[colorscheme catppuccin-mocha]]
 vim.cmd [[let g:netrw_winsize = 30]]
 --vim.o.background = 'dark'
 --require('vscode').load('dark')
