@@ -29,15 +29,20 @@ require'lspconfig'.pylsp.setup{
   }
 }
 
-require'lspconfig'.rust_analyzer.setup{
-    settings = {
-        ['rust-analyzer'] = {
-            diagnostics = {
-                disabled = { 'inactive-code' },
-            }
-        }
-    }
-}
+-- require'lspconfig'.rust_analyzer.setup{
+--     settings = {
+--         ['rust-analyzer'] = {
+--             cargo = {
+--                 features = { 
+--                     'all',
+--                 }
+--             },
+--             diagnostics = {
+--                 disabled = { 'inactive-code' },
+--             }
+--         }
+--     }
+-- }
 
 local cmp = require('cmp')
 local luasnip = require('luasnip')
