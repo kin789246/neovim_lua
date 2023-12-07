@@ -6,7 +6,7 @@ lsp_zero.on_attach(function(client, bufnr)
   lsp_zero.default_keymaps({buffer = bufnr})
   local opts = {buffer = bufnr}
   local bind = vim.keymap.set
-  bind('n', 'gdt', '<cmd>tab split | lua vim.lsp.buf.definition()<cr>', opts)
+  bind('n', 'gd', '<cmd>split | lua vim.lsp.buf.definition()<cr>', opts)
 end)
 
 require('mason').setup({})
