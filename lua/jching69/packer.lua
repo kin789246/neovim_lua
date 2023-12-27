@@ -38,4 +38,19 @@ return require('packer').startup(function(use)
   -- Themes:
   use 'Mofiqul/vscode.nvim'
   use { "catppuccin/nvim", as = "catppuccin" }
+
+  -- autopairs
+  use {
+      "windwp/nvim-autopairs",
+      config = function() require("nvim-autopairs").setup {} end
+  }
+
+  -- nvim treesitter
+  use {
+      'nvim-treesitter/nvim-treesitter',
+      run = function()
+          local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+          ts_update()
+      end,
+  }
 end)
