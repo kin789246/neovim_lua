@@ -1,5 +1,5 @@
 require('lualine').setup {
-    options = { theme = 'visual_studio_code' },
+    options = { theme = 'solarized_light' },
     sections = {
         lualine_c = {
             {
