@@ -2,7 +2,7 @@ require('vscode').setup({
   transparent = true,
   italic_comments = true,
   color_overrides = {
-        vscCursorDark = '#b8b8b8',
+        vscCursorDark = '#63f2ff',
         vscTabOutside = '#9e9e9e'
   },
 })

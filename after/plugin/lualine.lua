@@ -1,5 +1,5 @@
 require('lualine').setup {
-    options = { theme = 'solarized_light' },
+    options = { theme = 'iceberg_light' },
     sections = {
         lualine_c = {
             {
