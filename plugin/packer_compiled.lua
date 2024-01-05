@@ -151,6 +151,11 @@ _G.packer_plugins = {
     path = "/Users/jiaching/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  visual_studio_code = {
+    loaded = true,
+    path = "/Users/jiaching/.local/share/nvim/site/pack/packer/start/visual_studio_code",
+    url = "https://github.com/askfiy/visual_studio_code"
+  },
   ["vscode.nvim"] = {
     loaded = true,
     path = "/Users/jiaching/.local/share/nvim/site/pack/packer/start/vscode.nvim",
